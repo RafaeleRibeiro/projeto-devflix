@@ -45,9 +45,22 @@ body {
 
 }
 
-.search {
-  width: 70%;
+.searchBar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 4rem 0 2rem;
+  gap: 1em;
+}
+.searchBar ion-icon{
+  color: #fff;
+  font-size: 4em;
+  cursor: pointer;
+  padding-right: 0.3em;
+}
+
+.search {
+  width: 50em;
   display: flex;
   align-items: center;
   justify-content: center;
