@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2? family= Inter:wght@400;500 & family= Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600; 0.700;0.800;0.900;1.100;1.200;1.300;1.400;1.500;1.600;1.700;1.800;1.900 & display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Inter:wght@400;500&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bakbak+One&family=Inter:wght@400;500&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
   --font-raleway: "Raleway", sans-serif;
@@ -13,7 +13,7 @@
 }
 
 body {
-  background:#232222;
+  background: #232222;
 }
 
 #app {
@@ -25,34 +25,24 @@ body {
 }
 
 .logo {
-    color: #6C0505;
-    text-shadow: 10px 8px 6px #000;
-    font-family: Bakbak One;
-    font-size: 140px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    width: 572px;
-    height: 210px;
+  color: #6c0505;
+  text-shadow: 10px 8px 6px #000;
+  font-family: Bakbak One;
+  font-size: 500%;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
-.logo img {
-   width: 70%;
-    height: auto;
-    display: flex;
-    margin: left; 
-    text-align: center;
-
-}
-
-.searchBar{
+.searchBar {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 4rem 0 2rem;
-  gap: 1em;
+  width: 70%;
+  /* gap: 1em; */
 }
-.searchBar ion-icon{
+.searchBar ion-icon {
   color: #fff;
   font-size: 4em;
   cursor: pointer;
@@ -60,13 +50,13 @@ body {
 }
 
 .search {
-  width: 50em;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 1.5rem 1.75rem;
   border-radius: 4rem;
-  background:  #1f2123;
+  background: #1f2123;
   box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
   -webkit-box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
 }
@@ -83,7 +73,7 @@ body {
 }
 
 .search ion-icon {
-    color: #92342E;
+  color: #92342e;
   cursor: pointer;
 }
 
@@ -106,9 +96,9 @@ body {
   flex-wrap: wrap;
 }
 
-@media screen and (max-width: 60px) {
-  .app {
-    padding: 4rem 2rem;
+@media screen and (max-width: 600px) {
+  #app {
+    padding: 3rem 2rem;
   }
   .search {
     padding: 1rem 1.75rem;
@@ -123,9 +113,9 @@ body {
   }
 }
 
-@media screen and (max-width: 400px) {
-  .app {
-    padding: 4rem 1rem;
+@media screen and (max-width: 430px) {
+  #app {
+    padding: 3rem 1rem;
   }
   h1 {
     font-size: 2rem;
@@ -136,5 +126,8 @@ body {
   .movie {
     width: 100%;
     margin: 1rem;
+  }
+  .searchBar {
+    width: 100%;
   }
 }
