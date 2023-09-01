@@ -36,20 +36,16 @@ const App = () => {
   return (
     <div id="app">
       <div className="logo">
-        <img src={logo} alt="Logo devFlix" />
+        DEVFLIX
       </div>
       <div className="search">
         <input
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
           onKeyDown={handleKeyPress}
-          placeholder="Pesquise por filmes"
+          // placeholder="Pesquise por filmes"
         />
-        <img
-          src={searchIcon}
-          alt="Iconne de pesquisa"
-          onClick={() => searchMovies(searchTerm)}
-        />
+        <ion-icon name="search-outline" size="large" onClick={() => searchMovies(searchTerm)}></ion-icon>
       </div>
       {movies?.length > 0 ? (
         <div className="container">
